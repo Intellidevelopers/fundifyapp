@@ -1,5 +1,6 @@
 # fundifyapp
 
+# Visit our website for more details
 https://fundify-theta.vercel.app
 
 # Track & Manage Expenses Without Any Hassle
