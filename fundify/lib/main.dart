@@ -10,16 +10,26 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter App'),
-        ),
-        body: const Center(
-          child: Text(
-            'Hello, Flutter!',
-            style: TextStyle(fontSize: 24),
-          ),
-        ),
+      title: 'My Flutter App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Home Screen'),
+      ),
+      body: const Center(
+        child: Text('Welcome to My Flutter App!'),
       ),
     );
   }
